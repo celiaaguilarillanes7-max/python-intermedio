@@ -43,3 +43,29 @@ if temp <20:
     else:
         print("nivel rojo")
 ```
+
+### sentencia match-case
+Esta es una nueva centencia condiional, similar a los if anidados:
+```python
+vocal:str= "a"
+match vocal:
+case "a":
+    print("es una vocal")
+case "e":
+    print("es iun vocal")
+case "i":
+    print("es una vocal")
+case "o":
+    print("es iun vocal")
+case "u":
+    print("es una vocal")
+
+```
+una manera de hacer codigo mas corto es :
+```python
+    vocal:str=input("ingrese una letra: ")
+case "a"| "e" | "i" |"o" | "u" :
+    print("es una vocal")
+case _:
+    print("es una consonante")
+```
