@@ -1,31 +1,17 @@
-temp:int=20
-if temp>35:
-    print("alta temperatura ")
+## Usando while crear un programa que me de un pregunta para responder y que solo tengo 3 oportunidades  para dar con la respúesta correcta
+
+respuesta = ""
+intentos = 0
+
+while respuesta != "Tierra" and intentos < 3:
+    respuesta = input("¿Cuál es el planeta donde vivimos? ")
+    intentos = intentos + 1
+
+    if respuesta != "Tierra":
+        print("Respuesta incorrecta")
+        print("Te quedan", 3 - intentos, "oportunidades")
+
+if respuesta == "Tierra":
+    print("¡Respuesta correcta!")
 else:
-    print("temperatura normal")
-
-    vocal:str= "a"
-match vocal:
-case "a"
-    print("es una vocal")
-case "e":
-    print("es iun vocal")
-case "i":
-    print("es una vocal")
-case "o":
-    print("es iun vocal")
-case "u":
-    print("es una vocal")
-
-vocal:str= "a"
-match vocal:
-case "a":
-    print("es una vocal")
-case "e":
-    print("es iun vocal")
-case "i":
-    print("es una vocal")
-case "o":
-    print("es iun vocal")
-case "u":
-    print("es una vocal")
+    print("Se acabaron tus 3 oportunidades")

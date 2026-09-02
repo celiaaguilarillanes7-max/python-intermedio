@@ -69,3 +69,25 @@ case "a"| "e" | "i" |"o" | "u" :
 case _:
     print("es una consonante")
 ```
+## bucles
+### la centencia wwhile
+Es el primer mecanismo que existe en el python para repetir instrucciones.
+la sematica tras esta sematica es : `´mientras se cumpla la condicion has algo`
+ejemplo:
+```python
+salir:str="N"
+while salir=="N":
+    print("hola que tal")
+    salir=input("desea salir (S/N)")
+    print("Adios")
+```
+
+se puede cortar la ejecucion de un `while` haciendo el uso de `break`:
+```python
+intentos:int=0
+respuesta_corecta:str="ayacucho"
+while intentos<3:
+respuesta_usuario:str=input("capital ayacucho: ")
+if respuesta_correcta = respuesta_usuario
+
+```
