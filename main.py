@@ -1,17 +1,12 @@
-## Usando while crear un programa que me de un pregunta para responder y que solo tengo 3 oportunidades  para dar con la respúesta correcta
-
-respuesta = ""
-intentos = 0
-
-while respuesta != "Tierra" and intentos < 3:
-    respuesta = input("¿Cuál es el planeta donde vivimos? ")
-    intentos = intentos + 1
-
-    if respuesta != "Tierra":
-        print("Respuesta incorrecta")
-        print("Te quedan", 3 - intentos, "oportunidades")
-
-if respuesta == "Tierra":
-    print("¡Respuesta correcta!")
-else:
-    print("Se acabaron tus 3 oportunidades")
+## 1 deseamos mostrar los numeros del 0 al 5 con la funcion range
+for numero in range(6):
+    print(numero)
+    print("------------------------")
+## 2 deseamos mostrar los numeros del 2 al 6
+for numero in range(2,7):
+    print(numero)
+print("----------------------------")
+## 3 mostrar los numeros pares que existen entre 1 y 10
+for pares in range(2,11,2):
+    print(pares)
+    
