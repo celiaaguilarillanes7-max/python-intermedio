@@ -14,3 +14,14 @@ elif temp <=35:
     print("clima calido")
 else:
     print("alerta de calor extremo")
+
+###
+temp_actual:float=float(input("ingrese la temperatura actual:"))
+if temp_actual<10:
+  print("mucho ffrio")
+elif 10<=temp_actual<=25:
+  print("clima templado")
+elif 26<=temp_actual<=35:
+   print("clima calido")
+else:
+   print("alerta de calor extremo")

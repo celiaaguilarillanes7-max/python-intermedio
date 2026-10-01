@@ -17,4 +17,20 @@ while intentos > 0:
         intentos = intentos - 1
         print("Intentos que quedan:", intentos)
 if intentos == 0:
-    print("Cuenta bloqueada por seguridad"
+    print("Cuenta bloqueada por seguridad")
+          
+## respuesta corregida
+
+pass_dafualt:str="python123"
+intentos=3
+while intentos>0:
+  pass_usuario:str=input("ingresa tu conttraseña:")
+  if pass_usuario==pass_dafualt:
+     print("acceso concedido")
+     break
+   elif intentos==1
+     print("cuenta bloqueada por seguridad")
+     break
+   else:
+     print(f"te queda:{intentos}intentos")
+     intentos=intentos-1
